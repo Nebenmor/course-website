@@ -18,6 +18,7 @@ module.exports = {
       },
 
       colors: {
+        bodyBG: '#0B0338',
         darkGray: '#121826',
         lightGray: '#212936',
         lightGray2: '#121826',
