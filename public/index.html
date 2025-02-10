@@ -9,49 +9,52 @@
 </head>
 <body class="p-0 m-0 font-lato box-border md:bg-bodyBG">
     <div class="relative">
-        <header class="container mx-auto ">
-            <div class="flex justify-between items-center px-5 py-6 md:px-24">
-                <nav class="flex justify-center items-center">
-                    <div class="w-24 md:w-36 md:mr-16">
-                        <img src="./img/logo.svg" alt="">
-                    </div>
-                    <!-- Menu Items -->
-                        <div class="hidden lg:flex text-white justify-center items-center text-base font-normal">
-                        <a href="#courses" class="pr-6 py-4">Courses</a>
-                        <a href="#perks" class="px-6 py-4">Perks</a>
-                        <a href="#pricing" class="px-6 py-4">Pricing</a>
-                        <a href="#faq" class="px-6 py-4">Faq</a>
+        <div class="md:relative">
+            <div class="bg-gradient-to-b from-black to-transparent  inset-0  absolute z-10 hidden md:block" style="bottom: -35px"></div> 
+            <header class="container mx-auto md:relative md:z-20">
+                <div class="flex justify-between items-center px-5 py-6 md:px-24">
+                    <nav class="flex justify-center items-center">
+                        <div class="w-24 md:w-36 md:mr-16">
+                            <img src="./img/logo.svg" alt="">
                         </div>
-                </nav>
-    
-                <div class="hidden lg:flex justify-center gap-8 font-normal items-center text-white">
-                    <a href="#" class="text-base font-Lato">Login</a>
-                    <a href="#" class="bg-veryLightPurple rounded-full font-bold text-sm py-3.5 px-8">Sign Up</a>
+                        <!-- Menu Items -->
+                            <div class="hidden lg:flex text-white justify-center items-center text-base font-normal">
+                            <a href="#courses" class="pr-6 py-4">Courses</a>
+                            <a href="#perks" class="px-6 py-4">Perks</a>
+                            <a href="#pricing" class="px-6 py-4">Pricing</a>
+                            <a href="#faq" class="px-6 py-4">Faq</a>
+                            </div>
+                    </nav>
+        
+                    <div class="hidden lg:flex justify-center gap-8 font-normal items-center text-white">
+                        <a href="#" class="text-base font-Lato">Login</a>
+                        <a href="#" class="transition-transform duration-300 ease-in-out bg-veryLightPurple rounded-full font-bold text-sm py-3.5 px-8">Sign Up</a>
+                    </div>
+        
+                    <!-- Hamburger Icon -->
+                    <div class="lg:hidden">
+                        <!-- <i class='bx bx-menu text-white text-xl font-bold'></i> -->
+        
+                        <button id="menu-btn" class="block hamburger focus:outline-none">
+                            <span class="hamburger-top"></span>
+                            <span class="hamburger-middle"></span>
+                            <span class="hamburger-bottom"></span>
+                        </button>
+                    </div>
+        
+                    
                 </div>
-    
-                <!-- Hamburger Icon -->
+                <!-- Mobile Menu -->
                 <div class="lg:hidden">
-                    <!-- <i class='bx bx-menu text-white text-xl font-bold'></i> -->
-    
-                    <button id="menu-btn" class="block hamburger focus:outline-none">
-                        <span class="hamburger-top"></span>
-                        <span class="hamburger-middle"></span>
-                        <span class="hamburger-bottom"></span>
-                    </button>
+                    <div id="menu" class="absolute text-purplish flex-col items-center self-end hidden py-10 mt-6 space-y-6 font-bold bg-white  left-4 right-4 drop-shadow-md rounded-md sm:w-auto sm:self-center">
+                        <a href="#courses">Courses</a>
+                        <a href="#perks">Perks</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#faq">Faq</a>
+                    </div>
                 </div>
-    
-                
-            </div>
-            <!-- Mobile Menu -->
-            <div class="lg:hidden">
-                <div id="menu" class="absolute text-purplish flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-                    <a href="#courses">Courses</a>
-                    <a href="#perks">Perks</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#faq">Faq</a>
-                </div>
-            </div>
-        </header>
+            </header>
+        </div>
     <!-- Hero Section -->
      <section id="hero">
         <!-- Hero Background Image -->

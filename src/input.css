@@ -96,6 +96,3 @@ html {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
-.transit {
-    transition: all 0.5s;
-}
