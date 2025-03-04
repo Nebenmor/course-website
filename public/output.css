@@ -590,10 +590,6 @@ video {
   }
 }
 
-.fixed{
-  position: fixed;
-}
-
 .absolute{
   position: absolute;
 }
@@ -705,10 +701,6 @@ video {
 
 .h-full{
   height: 100%;
-}
-
-.h-28{
-  height: 7rem;
 }
 
 .w-24{
@@ -1549,6 +1541,10 @@ body {
 }
 
 @media (min-width: 1024px){
+  .lg\:fixed{
+    position: fixed;
+  }
+
   .lg\:absolute{
     position: absolute;
   }
@@ -1571,6 +1567,10 @@ body {
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:h-28{
+    height: 7rem;
   }
 
   .lg\:h-\[42rem\]{
