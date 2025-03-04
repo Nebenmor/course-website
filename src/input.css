@@ -8,13 +8,17 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    padding-top: 100px; /* Adjust based on your header height */
+  }
+
 .bgImage {
     background-image: url('../public/img/hero.png');
     background-repeat: no-repeat;
     background-position: top right;
     background-size: cover;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;

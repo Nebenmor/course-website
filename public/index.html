@@ -10,12 +10,12 @@
 <body class="p-0 m-0 font-lato box-border md:bg-bodyBG">
     <div class="relative">
         <div class="md:relative">
-            <div class="bg-gradient-to-b from-black to-transparent  inset-0  absolute z-10 hidden md:block" style="bottom: -35px"></div> 
-            <header class="container mx-auto md:relative md:z-20">
+            <div class="bg-gradient-to-b from-black to-transparent inset-0 h-28 fixed z-10 hidden md:block" style="bottom: -35px"></div> 
+            <header class="container mx-auto md:fixed top-0 inset-0 md:z-20">
                 <div class="flex justify-between items-center px-5 py-6 md:px-24">
                     <nav class="flex justify-center items-center">
                         <div class="w-24 md:w-36 md:mr-16">
-                            <img src="./img/logo.svg" alt="">
+                            <a href="#"><img src="./img/logo.svg" alt="logo"></a>
                         </div>
                         <!-- Menu Items -->
                             <div class="hidden lg:flex text-white justify-center items-center text-base font-normal">
@@ -502,7 +502,7 @@
         </div>    
         
         <p class="font-normal text-base text-lighterGray pt-10 md:text-center"><span class="whitespace-nowrap">Providing the lift to launch your</span> <span class="whitespace-nowrap">development career</span></p>
-        <p class="font-normal text-sm text-lighterGray pt-3.5 md:text-center">&copy; 2024 Chris Courses. All rights reserved.</p>
+        <p class="font-normal text-sm text-lighterGray pt-3.5 md:text-center">&copy; <span id="year"></span> Chris Courses. All rights reserved.</p>
       </footer>
 
     <script src="./main.js"></script>

@@ -6,3 +6,8 @@ btn.addEventListener('click', () => {
     nav.classList.toggle('flex');
     nav.classList.toggle('hidden');
 })
+
+const year = document.getElementById("year");
+const currentYear = new Date().getFullYear();
+
+year.innerHTML = currentYear;

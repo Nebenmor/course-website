@@ -590,6 +590,10 @@ video {
   }
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -701,6 +705,10 @@ video {
 
 .h-full{
   height: 100%;
+}
+
+.h-28{
+  height: 7rem;
 }
 
 .w-24{
@@ -1259,12 +1267,17 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  padding-top: 100px;
+  /* Adjust based on your header height */
+}
+
 .bgImage {
   background-image: url('../public/img/hero.png');
   background-repeat: no-repeat;
   background-position: top right;
   background-size: cover;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
@@ -1361,6 +1374,10 @@ html {
 }
 
 @media (min-width: 768px){
+  .md\:fixed{
+    position: fixed;
+  }
+
   .md\:relative{
     position: relative;
   }
