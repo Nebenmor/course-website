@@ -1,1 +1,5 @@
+# Dependencies
 node_modules/
+
+# Tailwind processed CSS (if you don't want to commit it)
+public/css/output.css
