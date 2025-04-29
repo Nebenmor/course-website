@@ -1,511 +1,736 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Chris Courses Website</title>
-</head>
-<body class="p-0 m-0 font-lato box-border md:bg-bodyBG">
+  </head>
+  <body class="p-0 m-0 font-lato box-border md:bg-bodyBG">
     <div class="relative">
-        <div class="md:relative">
-            <div class="bg-gradient-to-b from-black to-transparent inset-0 lg:h-28 lg:fixed z-10 hidden md:block" style="bottom: -35px"></div> 
-            <header class="container mx-auto lg:fixed top-0 inset-0 md:z-20">
-                <div class="flex justify-between items-center px-5 py-6 md:px-24">
-                    <nav class="flex justify-center items-center">
-                        <div class="w-24 md:w-36 md:mr-16">
-                            <a href="#"><img src="./img/logo.svg" alt="logo"></a>
-                        </div>
-                        <!-- Menu Items -->
-                            <div class="hidden lg:flex text-white justify-center items-center text-base font-normal">
-                            <a href="#courses" class="pr-6 py-4">Courses</a>
-                            <a href="#perks" class="px-6 py-4">Perks</a>
-                            <a href="#pricing" class="px-6 py-4">Pricing</a>
-                            <a href="#faq" class="px-6 py-4">Faq</a>
-                            </div>
-                    </nav>
-        
-                    <div class="hidden lg:flex justify-center gap-8 font-normal items-center text-white">
-                        <a href="#" class="text-base font-Lato">Login</a>
-                        <a href="#" class="transition-transform duration-300 ease-in-out bg-veryLightPurple rounded-full font-bold text-sm py-3.5 px-8">Sign Up</a>
-                    </div>
-        
-                    <!-- Hamburger Icon -->
-                    <div class="lg:hidden">
-                        <!-- <i class='bx bx-menu text-white text-xl font-bold'></i> -->
-        
-                        <button id="menu-btn" class="block hamburger focus:outline-none">
-                            <span class="hamburger-top"></span>
-                            <span class="hamburger-middle"></span>
-                            <span class="hamburger-bottom"></span>
-                        </button>
-                    </div>
-        
-                    
-                </div>
-                <!-- Mobile Menu -->
-                <div class="lg:hidden">
-                    <div id="menu" class="absolute text-purplish flex-col items-center self-end hidden py-10 mt-6 space-y-6 font-bold bg-white  left-4 right-4 drop-shadow-md rounded-md sm:w-auto sm:self-center">
-                        <a href="#courses">Courses</a>
-                        <a href="#perks">Perks</a>
-                        <a href="#pricing">Pricing</a>
-                        <a href="#faq">Faq</a>
-                    </div>
-                </div>
-            </header>
-        </div>
-    <!-- Hero Section -->
-     <section id="hero">
+      <div class="md:relative">
+        <div
+          class="bg-gradient-to-b from-black to-transparent inset-0 lg:h-28 lg:fixed z-10 hidden md:block"
+          style="bottom: -35px"
+        ></div>
+        <header class="container mx-auto lg:fixed top-0 inset-0 md:z-20">
+          <div class="flex justify-between items-center px-5 py-6 md:px-24">
+            <nav class="flex justify-center items-center">
+              <div class="w-24 md:w-36 md:mr-16">
+                <a href="#"><img src="./img/logo.svg" alt="logo" /></a>
+              </div>
+              <!-- Menu Items -->
+              <div
+                class="hidden lg:flex text-white justify-center items-center text-base font-normal"
+              >
+                <a href="#courses" class="pr-6 py-4">Courses</a>
+                <a href="#perks" class="px-6 py-4">Perks</a>
+                <a href="#pricing" class="px-6 py-4">Pricing</a>
+                <a href="#faq" class="px-6 py-4">Faq</a>
+              </div>
+            </nav>
+
+            <div
+              class="hidden lg:flex justify-center gap-8 font-normal items-center text-white"
+            >
+              <a href="#" class="text-base font-Lato">Login</a>
+              <a
+                href="#"
+                class="transition-transform duration-300 ease-in-out bg-veryLightPurple rounded-full font-bold text-sm py-3.5 px-8"
+                >Sign Up</a
+              >
+            </div>
+
+            <!-- Hamburger Icon -->
+            <div class="lg:hidden">
+              <!-- <i class='bx bx-menu text-white text-xl font-bold'></i> -->
+
+              <button id="menu-btn" class="block hamburger focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+              </button>
+            </div>
+          </div>
+          <!-- Mobile Menu -->
+          <div class="lg:hidden">
+            <div
+              id="menu"
+              class="absolute text-purplish flex-col items-center self-end hidden py-10 mt-6 space-y-6 font-bold bg-white left-4 right-4 drop-shadow-md rounded-md sm:w-auto sm:self-center"
+            >
+              <a href="#courses">Courses</a>
+              <a href="#perks">Perks</a>
+              <a href="#pricing">Pricing</a>
+              <a href="#faq">Faq</a>
+            </div>
+          </div>
+        </header>
+      </div>
+      <!-- Hero Section -->
+      <section id="hero">
         <!-- Hero Background Image -->
         <!-- <div class="bgImage"></div> -->
 
-        <!-- Hero Background Video -->      
-        <video src="./videos/galaxy.mp4"
-        loop="loop"
-        autoplay="autoplay"
-        playsinline="playsinline"
-        muted="muted"
-        class="w-full h-full object-cover bgImage" >
-        </video>
+        <!-- Hero Background Video -->
+        <video
+          src="./videos/galaxy.mp4"
+          loop="loop"
+          autoplay="autoplay"
+          playsinline="playsinline"
+          muted="muted"
+          class="w-full h-full object-cover bgImage"
+        ></video>
 
         <div class="bg-overlay lg:hidden"></div>
 
-        <div class="container mx-auto flex flex-col justify-center px-5 md:block md:px-24 md:mt-36">
-            <h1 class="text-4xl text-white text-left font-bold mt-6 md:w-1/2 md:text-6xl">
-                <span class="block whitespace-nowrap">Turbocharge your</span> 
-                <span class="text-ashen whitespace-nowrap md:block">development career</span></h1>
-            <p class="text-xs sm:text-base font-normal text-white mt-3.5 md:mt-8">
-                <span class="block whitespace-nowrap">Chris Courses provides students and professionals </span>
-                <span class="block whitespace-nowrap">a college-level web development education.</span>
-            </p>
+        <div
+          class="container mx-auto flex flex-col justify-center px-5 md:block md:px-24 md:mt-36"
+        >
+          <h1
+            class="text-4xl text-white text-left font-bold mt-6 md:w-1/2 md:text-6xl"
+          >
+            <span class="block whitespace-nowrap">Turbocharge your</span>
+            <span class="text-ashen whitespace-nowrap md:block"
+              >development career</span
+            >
+          </h1>
+          <p class="text-xs sm:text-base font-normal text-white mt-3.5 md:mt-8">
+            <span class="block whitespace-nowrap"
+              >Chris Courses provides students and professionals
+            </span>
+            <span class="block whitespace-nowrap"
+              >a college-level web development education.</span
+            >
+          </p>
 
-            <div class="w-full py-6 text-center md:text-left md:py-8">
-                <button class="w-full bg-white text-veryLightPurple text-lg py-3 mt-4 mb-20 md:mb-0 rounded-md md:px-9 md:py-3.5 md:w-auto">
-                    Get started
-                </button>
-            </div>
+          <div class="w-full py-6 text-center md:text-left md:py-8">
+            <button
+              class="w-full bg-white text-veryLightPurple text-lg py-3 mt-4 mb-20 md:mb-0 rounded-md md:px-9 md:py-3.5 md:w-auto"
+            >
+              Get started
+            </button>
+          </div>
         </div>
-     </section>
+      </section>
     </div>
-
 
     <!-- Course Metrics -->
     <section id="courses" class="mx-auto bg-lightGray2 md:mt-36">
-        <div class="flex flex-col justify-center items-center px-5 lg:px-64 relative -top-16">
-            <div class="w-full flex flex-col justify-center itext-centerrounded bg-lightGray md:mx-64 md:flex-row divide-[#4D5562] divide-y md:divide-y-0 md:divide-x">
-                <div class="w-full py-3.5 text-center md:w-1/3">
-                    <h2 class="text-purplish text-5xl font-bold">84</h2>
-                    <p class="text-white text-lg font-normal">Lessons</p>
-                </div>
-                <div class="w-full py-3.5 text-center md:w-1/3">
-                    <h2 class="text-purplish text-5xl font-bold">29</h2>
-                    <p class="text-white text-lg font-normal">Hours of Content</p>
-                </div>
-                <div class="w-full py-3.5 text-center md:w-1/3">
-                    <h2 class="text-purplish text-5xl font-bold">5059</h2>
-                    <p class="text-white text-lg font-normal">Students</p>
-                </div>
-            </div>
-            <p class="font-normal text-sm text-lighterGray mt-4">Metrics update real-time</p>
+      <div
+        class="flex flex-col justify-center items-center px-5 lg:px-64 relative -top-16"
+      >
+        <div
+          class="w-full flex flex-col justify-center itext-centerrounded bg-lightGray md:mx-64 md:flex-row divide-[#4D5562] divide-y md:divide-y-0 md:divide-x"
+        >
+          <div class="w-full py-3.5 text-center md:w-1/3">
+            <h2 class="text-purplish text-5xl font-bold">84</h2>
+            <p class="text-white text-lg font-normal">Lessons</p>
+          </div>
+          <div class="w-full py-3.5 text-center md:w-1/3">
+            <h2 class="text-purplish text-5xl font-bold">29</h2>
+            <p class="text-white text-lg font-normal">Hours of Content</p>
+          </div>
+          <div class="w-full py-3.5 text-center md:w-1/3">
+            <h2 class="text-purplish text-5xl font-bold">5059</h2>
+            <p class="text-white text-lg font-normal">Students</p>
+          </div>
         </div>
+        <p class="font-normal text-sm text-lighterGray mt-4">
+          Metrics update real-time
+        </p>
+      </div>
 
-        <!-- Popular Courses -->
-        <div class="flex flex-col justify-center items-center">
-            <h2 class="font-bold text-center text-3xl text-white">Popular Courses</h2>
-            <p class="font-normal text-center text-xl text-lighterGray mt-4">
-                <span class="md:first:block md:whitespace-nowrap">
-                    Whether you'd like to build a web app or learn creative
-                </span>
-                <span class="md:block md:whitespace-nowrap">
-                    coding techniques, I'll teach you how.
-                </span>
+      <!-- Popular Courses -->
+      <div class="flex flex-col justify-center items-center">
+        <h2 class="font-bold text-center text-3xl text-white">
+          Popular Courses
+        </h2>
+        <p class="font-normal text-center text-xl text-lighterGray mt-4">
+          <span class="md:first:block md:whitespace-nowrap">
+            Whether you'd like to build a web app or learn creative
+          </span>
+          <span class="md:block md:whitespace-nowrap">
+            coding techniques, I'll teach you how.
+          </span>
+        </p>
+      </div>
+
+      <!-- Course Tabs -->
+      <div
+        class="flex flex-col justify-center items-center gap-7 mt-8 pb-11 md:pb-36 md:flex-row px-6 lg:px-28 container mx-auto"
+      >
+        <!-- Course 1 -->
+        <div class="bg-lightGray md:w-1/3">
+          <div class="w-full">
+            <img src="./img/course-1.png" alt="" class="w-full" />
+          </div>
+          <div class="px-5">
+            <h2 class="font-normal text-lg text-white mt-4">
+              HTML for Complete Beginners
+            </h2>
+            <p class="font-normal text-sm text-offWhite mt-sm">
+              <span class="whitespace-nowrap"
+                >Brand new to web development?</span
+              >
+              Start here to learn the foundations and begin your development
+              journey.
             </p>
+            <div class="flex justify-start items-center gap-8 mt-9">
+              <p class="font-normal text-sm text-lighterGray whitespace-nowrap">
+                6 videos + 6 quizzes
+              </p>
+              <p class="font-normal text-sm text-lighterGray whitespace-nowrap">
+                Skill Level
+              </p>
+            </div>
+            <div class="flex justify-start items-center gap-[6rem] mb-4">
+              <p class="font-normal text-xs text-veryLightGray">2:03 hours</p>
+              <p class="font-normal text-xs text-veryLightGray">Beginner</p>
+            </div>
+          </div>
         </div>
 
-        <!-- Course Tabs -->
-        <div class="flex flex-col justify-center items-center gap-7 mt-8 pb-11 md:pb-36 md:flex-row px-6 lg:px-28 container mx-auto">
-            <!-- Course 1 -->
-            <div class="bg-lightGray md:w-1/3">
-                <div class="w-full"> 
-                    <img src="./img/course-1.png" alt="" class="w-full">
-                </div>
-                <div class="px-5">
-                    <h2 class="font-normal text-lg text-white mt-4">
-                        HTML for Complete Beginners
-                    </h2>
-                    <p class="font-normal text-sm text-offWhite mt-sm"><span class="whitespace-nowrap">Brand new to web development?</span> Start here to learn the foundations and begin your development journey.</p>
-                    <div class="flex justify-start items-center gap-8 mt-9">
-                        <p class="font-normal text-sm text-lighterGray whitespace-nowrap">6 videos + 6 quizzes</p>
-                        <p class="font-normal text-sm text-lighterGray whitespace-nowrap">Skill Level</p>
-                    </div>
-                    <div class="flex justify-start items-center gap-[6rem] mb-4">
-                        <p class="font-normal text-xs text-veryLightGray">2:03 hours</p>
-                        <p class="font-normal text-xs text-veryLightGray">Beginner</p>
-                    </div>
-                </div>
+        <!-- Course 2 -->
+        <div class="bg-lightGray md:w-1/3">
+          <div class="w-full">
+            <img src="./img/course-2.png" alt="" class="w-full" />
+          </div>
+          <div class="px-5">
+            <h2 class="font-normal text-lg text-white mt-4">
+              HTML5 Canvas and JavaScript Gam...
+            </h2>
+            <p class="font-normal text-sm text-offWhite mt-sm">
+              When I first started learning web development, I was able to get
+              text and images displaying in a browser, but...
+            </p>
+            <div class="flex justify-start items-center gap-8 mt-9">
+              <p class="font-normal text-sm text-lighterGray">17 videos</p>
+              <p class="font-normal text-sm text-lighterGray">Skill Level</p>
             </div>
-
-            <!-- Course 2 -->
-            <div class="bg-lightGray md:w-1/3">
-                <div class="w-full"> 
-                    <img src="./img/course-2.png" alt="" class="w-full">
-                </div>
-                <div class="px-5">
-                    <h2 class="font-normal text-lg text-white mt-4">HTML5 Canvas and JavaScript Gam...</h2>
-                    <p class="font-normal text-sm text-offWhite mt-sm">When I first started learning web development, I was able to get text and images displaying in a browser, but...</p>
-                    <div class="flex justify-start items-center gap-8 mt-9">
-                        <p class="font-normal text-sm text-lighterGray">17 videos</p>
-                        <p class="font-normal text-sm text-lighterGray">Skill Level</p>
-                    </div>
-                    <div class="flex justify-start items-center mb-4">
-                        <p class="font-normal text-xs text-veryLightGray mr-[2rem]">6:03 hours</p>
-                        <p class="font-normal text-xs text-veryLightGray">Beginner</p>
-                    </div>
-                </div>
+            <div class="flex justify-start items-center mb-4">
+              <p class="font-normal text-xs text-veryLightGray mr-[2rem]">
+                6:03 hours
+              </p>
+              <p class="font-normal text-xs text-veryLightGray">Beginner</p>
             </div>
-
-            <!-- Course 3 -->
-            <div class="bg-lightGray md:w-1/3">
-                <div class="w-full"> 
-                    <img src="./img/course-3.png" alt="" class="w-full">
-                </div>
-                <div class="px-5">
-                    <h2 class="font-normal text-lg text-white mt-4">Web Application Development for ...</h2>
-                    <p class="font-normal text-sm text-offWhite mt-sm">Ever wonder how user-based apps like Facebook, Gmail, and YouTube are created? Wonder no more, thi...</p>
-                    <div class="flex justify-start items-center gap-8 mt-9">
-                        <p class="font-normal text-sm text-lighterGray">27 videos</p>
-                        <p class="font-normal text-sm text-lighterGray">Skill Level</p>
-                    </div>
-                    <div class="flex justify-start items-center mb-4">
-                        <p class="font-normal text-xs text-veryLightGray mr-[2rem]">6:09 hours</p>
-                        <p class="font-normal text-xs text-veryLightGray">Beginner</p>
-                    </div>
-                </div>
-            </div>
-            
+          </div>
         </div>
+
+        <!-- Course 3 -->
+        <div class="bg-lightGray md:w-1/3">
+          <div class="w-full">
+            <img src="./img/course-3.png" alt="" class="w-full" />
+          </div>
+          <div class="px-5">
+            <h2 class="font-normal text-lg text-white mt-4">
+              Web Application Development for ...
+            </h2>
+            <p class="font-normal text-sm text-offWhite mt-sm">
+              Ever wonder how user-based apps like Facebook, Gmail, and YouTube
+              are created? Wonder no more, thi...
+            </p>
+            <div class="flex justify-start items-center gap-8 mt-9">
+              <p class="font-normal text-sm text-lighterGray">27 videos</p>
+              <p class="font-normal text-sm text-lighterGray">Skill Level</p>
+            </div>
+            <div class="flex justify-start items-center mb-4">
+              <p class="font-normal text-xs text-veryLightGray mr-[2rem]">
+                6:09 hours
+              </p>
+              <p class="font-normal text-xs text-veryLightGray">Beginner</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Web Dev Education -->
-     <section id="perks" class="relative bg-lightGray3">
-        <!-- Subsection 1 -->
-         <div class="relative flex flex-col justify-start items-center gap-x-32 px-6 md:flex-row lg:px-28">
-                <!-- Left -->
-            <div class="lg:w-1/2">
-                <h2 class="font-bold text-white text-2xl pt-8 md:pt-32 md:text-4xl">An affordable web dev education</h2>
-                <p class="font-normal text-lighterGray text-xl mt-4 md:mt-6">Chris Courses was created as a way to give students a college-level curriculum at a fraction of the cost. By becoming a part of Chris Courses, you'll immediately gain access to:</p>
+    <section id="perks" class="relative bg-lightGray3">
+      <!-- Subsection 1 -->
+      <div
+        class="relative flex flex-col justify-start items-center gap-x-32 px-6 md:flex-row lg:px-28"
+      >
+        <!-- Left -->
+        <div class="lg:w-1/2">
+          <h2 class="font-bold text-white text-2xl pt-8 md:pt-32 md:text-4xl">
+            An affordable web dev education
+          </h2>
+          <p class="font-normal text-lighterGray text-xl mt-4 md:mt-6">
+            Chris Courses was created as a way to give students a college-level
+            curriculum at a fraction of the cost. By becoming a part of Chris
+            Courses, you'll immediately gain access to:
+          </p>
 
-                <!-- Perk 1 -->
-                <div class="flex items-start justify-start gap-11 pt-11">
-                    <div class="bg-iconColor p-3 rounded">
-                        <img src="./img/cyclic-arrow.svg" alt="notification-bell" class="w-4 h-4">
-                    </div>
-                    <div>
-                        <h2 class="text-white font-bold text-lg">Perk #1</h2>
-                        <p class="font-normal font-base text-normalGray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-
-                <!-- Perk 2 -->
-                <div class="flex items-start justify-start gap-11 pt-5">
-                    <div class="bg-iconColor p-3 rounded">
-                        <img src="./img/notification-bell.svg" alt="notification-bell" class="w-4">
-                    </div>
-                    <div>
-                        <h2 class="text-white font-bold text-lg">Perk #2</h2>
-                        <p class="font-normal font-base text-normalGray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-
-                <!-- Perk 3 -->
-                <div class="flex items-start justify-start gap-11 pt-5 pb-10">
-                    <div class="bg-iconColor p-3 rounded">
-                        <img src="./img/calendar.svg" alt="notification-bell" class="w-4">
-                    </div>
-                    <div>
-                        <h2 class="text-white font-bold text-lg">Perk #3</h2>
-                        <p class="font-normal font-base text-normalGray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
+          <!-- Perk 1 -->
+          <div class="flex items-start justify-start gap-11 pt-11">
+            <div class="bg-iconColor p-3 rounded">
+              <img
+                src="./img/cyclic-arrow.svg"
+                alt="notification-bell"
+                class="w-4 h-4"
+              />
             </div>
-
-            <!-- Right -->
-            <div class="lg:w-1/2 relative container flex flex-col justify-center items-center">
-                <div class="w-full lg:absolute lg:top-24 lg:right-24 md:z-30">
-                    <img src="./img/canvas.png" alt="canvas" class="">
-                </div>
-                
-                <div class="hidden w-[25rem] h-[49rem] lg:block translate-x-20 translate-y-1">
-                    <img src="./img/gradient-frame.png" alt="gradient-frame">
-                </div>     
+            <div>
+              <h2 class="text-white font-bold text-lg">Perk #1</h2>
+              <p class="font-normal font-base text-normalGray">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
+          </div>
 
-         </div>
-        
-
-        <!-- Subsection 2 -->
-        <div class="relative flex flex-col justify-start items-center gap-32 px-6 pt-5 md:flex-row lg:px-28 lg:pb-28">
-            <!-- Left -->
-            <div class="hidden relative container flex-col justify-center items-center lg:flex lg:w-1/2">
-                <div class="w-full lg:absolute lg:top-24 md:z-30 lg:w-[30rem] lg:h-[42rem]">
-                    <img src="./img/perk.png" alt="perk" class="">
-                </div>
-                
-                <div class="hidden w-[25rem] relative lg:block -translate-x-64 translate-y-1">
-                    <img src="./img/gradient-frame.png" alt="gradient-frame" class="top-0">
-                </div>     
+          <!-- Perk 2 -->
+          <div class="flex items-start justify-start gap-11 pt-5">
+            <div class="bg-iconColor p-3 rounded">
+              <img
+                src="./img/notification-bell.svg"
+                alt="notification-bell"
+                class="w-4"
+              />
             </div>
-
-            <!-- Right -->
-            <div class="lg:w-1/2">
-                <h2 class="font-bold text-white text-2xl pt-8 md:pt-32 md:text-4xl">Straight to the point videos, always</h2>
-                <p class="font-normal text-lighterGray text-xl mt-4 md:mt-6">Chris Courses always delivers content in the most efficient manner possible. All courses are meticulously written, revised, and edited before any production even begins.</p>
-
-                <!-- Perk 4 -->
-                <div class="flex items-start justify-start gap-11 pt-11">
-                    <div class="bg-iconColor p-3 rounded">
-                        <img src="./img/cyclic-arrow.svg" alt="notification-bell" class="w-4 h-4">
-                    </div>
-                    <div>
-                        <h2 class="text-white font-bold text-lg">Perk #4</h2>
-                        <p class="font-normal font-base text-normalGray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-
-                <!-- Perk 5 -->
-                <div class="flex items-start justify-start gap-11 pt-5">
-                    <div class="bg-iconColor p-3 rounded">
-                        <img src="./img/notification-bell.svg" alt="notification-bell" class="w-4">
-                    </div>
-                    <div>
-                        <h2 class="text-white font-bold text-lg">Perk #5</h2>
-                        <p class="font-normal font-base text-normalGray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
+            <div>
+              <h2 class="text-white font-bold text-lg">Perk #2</h2>
+              <p class="font-normal font-base text-normalGray">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
-     </div> 
+          </div>
 
-     <div class="flex flex-col justify-center items-center p-6 xl:px-[28rem]">
-        <p class="font-normal text-xl text-lighterGray text-center">“Thank you for making the playlist for these HTML5 Canvas courses. The BEST break down I've seen so far! You explain the reasoning behind the code so clear. Your website is amazing!”</p>
-       <div class="flex justify-center items-center">
-        <div class="pt-3 pr-2">
-            <img src="./img/ceo-apple.png" alt="ceo-apple" class="rounded-full">
-        </div>
-        <small class="font-normal text-xs text-veryLightGray text-center">Tom Cook / CEO Apple</small>
-       </div>
-     </div>
-     </section>
-
-     <!-- Pricing Section -->
-      <section id="pricing" class="bg-lightGray2 px-4 pb-16">
-        <div class="flex flex-col justify-center items-center">
-            <h2 class="font-bold text-white text-4xl text-center pt-14 md:pt-16">Simple no-tricks pricing</h2>
-            <p class="font-normal text-xl text-ashen text-center pt-4 md:max-w-[32rem]">If you're not satisfied, contact me within the first 14 days and I'll send you a full refund</p>
-        </div>
-        <div class="flex flex-col justify-center items-center pt-4 md:relative md:-bottom-32 md:flex-row md:mt-4">
-            <!-- Pricing plan 1 -->
-            <!-- Price -->
-            <div class="flex flex-col justify-center items-center mb-11 md:mb-0">
-                <div class="bg-[#394150] w-full rounded-t-lg py-8">
-                    <h2 class="font-bold text-white text-2xl text-center">Yearly</h2>
-                    <p class="text-center">
-                        <span class="font-normal text-xl text-normalGray single-strike">$180</span>
-                        <span class="font-bold text-[2.6rem] text-white pt-2">$99</span>
-                        <span class="font-normal text-xl text-normalGray">/year</span>
-                    </p>
-                </div>
-
-                <!-- Features and Button -->
-                <div class="bg-[#1F2937] w-full rounded-b-lg px-8">
-                <div class="flex justify-start items-center pt-4">
-                        <div class="pr-5">
-                            <img src="./img/checkmark.svg" alt="checkmark">
-                        </div>
-                        <p class="font-normal text-base text-white max-w-[17rem]">Unlimited access for your entire lifetime</p>
-                </div>
-
-                <div class="flex justify-start items-center pt-4">
-                        
-                            <img src="./img/checkmark.svg" alt="checkmark" class="pr-5">
-                    
-                        <p class="font-normal text-base text-white max-w-72">All of the benefits that come with the monthly plan</p>
-                    </div>
-
-                    <div class="flex justify-start items-center pt-4">
-                        <div class="pr-5">
-                            <img src="./img/checkmark.svg" alt="checkmark">
-                        </div>
-                        <p class="font-normal text-base text-white">14 day money back guarantee</p>
-                </div>
-
-                <button class="w-full font-normal text-center text-base text-white px-3 py-4 mt-6 mb-5 rounded-lg bg-[#43ACA7]">Start your subscription</button>
-                </div>
+          <!-- Perk 3 -->
+          <div class="flex items-start justify-start gap-11 pt-5 pb-10">
+            <div class="bg-iconColor p-3 rounded">
+              <img
+                src="./img/calendar.svg"
+                alt="notification-bell"
+                class="w-4"
+              />
             </div>
-
-            <!-- Pricing Plan 2 -->
-            <!-- Price -->
-            <div class="w-full flex flex-col justify-center items-center mt-4 mb-11 outline rounded-lg outline-[#49D7D0] relative z-10 md:w-auto md:mt-0">
-                <div class="py-1 px-3 rounded-full bg-[#43ACA7] translate-y-3">
-                    <p class="font-bold text-xs text-[#275E55]">MOST POPULAR</p>
-                </div>
-                <div class="bg-[#394150] w-full rounded-t-lg py-8">
-                    <h2 class="font-bold text-white text-2xl text-center">Monthly</h2>
-                    <p class="text-center">
-                        <span class="font-bold text-[2.6rem] text-white pt-2">$15</span>
-                        <span class="font-normal text-xl text-normalGray">/Month</span>
-                    </p>
-                </div>
-
-                <!-- Features and Button -->
-                <div class="bg-[#1F2937] w-full rounded-b-lg px-8 flex flex-col justify-center items-start">
-                <div class="flex justify-center items-center pt-4">
-                        <div class="pr-5">
-                            <img src="./img/checkmark.svg" alt="checkmark">
-                        </div>
-                        <p class="font-normal text-base text-white">Unlock all premium videos</p>
-                </div>
-
-                <div class="flex justify-center items-center pt-4">
-                        <div class="pr-5">
-                            <img src="./img/checkmark.svg" alt="checkmark">
-                        </div>
-                        <p class="font-normal text-base text-white">Download videos and watch offline</p>
-                    </div>
-
-                    <div class="flex justify-center items-center pt-4">
-                        <div class="pr-5">
-                            <img src="./img/checkmark.svg" alt="checkmark">
-                        </div>
-                        <p class="font-normal text-base text-white">Access premium code snippets</p>
-                </div>
-
-                <div class="flex justify-start items-center pt-4">
-                    <div class="pr-5">
-                        <img src="./img/checkmark.svg" alt="checkmark">
-                    </div>
-                    <p class="font-normal text-base text-white">Access GitHub source code</p>
-                </div>
-
-                <div class="flex justify-center items-center pt-4">
-                    <div class="pr-5">
-                        <img src="./img/checkmark.svg" alt="checkmark">
-                    </div>
-                    <p class="font-normal text-base text-white">14 day money back guarantee</p>
-                </div>
-
-                <button class="w-full font-normal text-center text-base text-white px-3 py-4 mt-6 mb-5 rounded-lg bg-[#43ACA7]">Start your subscription</button>
-                </div>
+            <div>
+              <h2 class="text-white font-bold text-lg">Perk #3</h2>
+              <p class="font-normal font-base text-normalGray">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
-
-            <!-- Pricing Plan 3 -->
-            <!-- Price -->
-            <div class="flex flex-col justify-start items-center mt-4 md:mt-0">
-                <div class="bg-[#394150] w-full rounded-t-lg py-8">
-                    <h2 class="font-bold text-white text-2xl text-center">Forever</h2>
-                    <p class="text-center">
-                        <span class="font-bold text-[2.6rem] text-white pt-2">$349</span>
-                        <span class="font-normal text-xl text-normalGray">/year</span>
-                    </p>
-                </div>
-
-                <!-- Features and Button -->
-                <div class="bg-[#1F2937] w-full rounded-b-lg px-8">
-                    <div class="flex justify-start items-center pt-4">
-                        <div class="pr-5">
-                            <img src="./img/checkmark.svg" alt="checkmark">
-                        </div>
-                        <p class="font-normal text-base text-white max-w-[17rem]">Unlimited access for your entire lifetime</p>
-                    </div>
-    
-                    <div class="flex justify-start items-center pt-4">
-                        
-                            <img src="./img/checkmark.svg" alt="checkmark" class="pr-5">
-                        
-                        <p class="font-normal text-base text-white max-w-72">All of the benefits that come with the monthly plan</p>
-                    </div>
-    
-                    <div class="flex justify-start items-center pt-4">
-                        <div class="pr-5">
-                            <img src="./img/checkmark.svg" alt="checkmark">
-                        </div>
-                        <p class="font-normal text-base text-white">14 day money back guarantee</p>
-                    </div>
-    
-                <button class="w-full font-normal text-center text-base text-white px-3 py-4 mt-6 mb-5 rounded-lg bg-[#43ACA7]">Start your subscription</button>
-                </div>
-            </div>
-        </div>
-      </section>
-
-      <!-- FAQ Section -->
-      <section id="faq" class="bg-lightGray3 px-6 pb-24" >
-        <h2 class="font-bold text-left text-white text-3xl pt-14 pb-8 max-w-80 md:max-w-none">Frequently asked questions</h2>
-        <hr class="h-0.5">
-
-        <!-- Question 1 -->
-        <div class="flex flex-col justify-left items-start gap-5 md:flex-row md:py-10">
-            <div class="font-normal text-white text-base pt-6 md:w-1/3">Are credit card payments secure?</div>
-            <div class="font-normal text-normalGray text-base pb-6 md:w-2/3">Yes! All credit card payments are managed directly through Stripe, an online payment processor considered "the standard" when it comes to accepting online payments. Your credit card never actually touches any part of the chriscourses.com server—it is encrypted and managed directly by Stripe which has strict protocols in place to ensure your card is always secure.</div>
+          </div>
         </div>
 
-        <!-- Question 2 -->
-        <div class="flex flex-col justify-left items-start gap-5 border-t border-white md:flex-row md:py-10">
-            <div class="font-normal text-white text-base pt-6 md:w-1/3">Can I cancel at anytime?</div>
-            <div class="font-normal text-normalGray text-base pb-6 md:w-2/3">Yes, for sure. No matter how far you're into your subscription, you can visit your account page and cancel at anytime. Your subscription will stay active 'til the end of your subscription period.</div>
+        <!-- Right -->
+        <div
+          class="lg:w-1/2 relative container flex flex-col justify-center items-center"
+        >
+          <div class="w-full lg:absolute lg:top-24 lg:right-24 md:z-30">
+            <img src="./img/canvas.png" alt="canvas" class="" />
+          </div>
+
+          <div
+            class="hidden w-[25rem] h-[49rem] lg:block translate-x-20 translate-y-1"
+          >
+            <img src="./img/gradient-frame.png" alt="gradient-frame" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Subsection 2 -->
+      <div
+        class="relative flex flex-col justify-start items-center gap-32 px-6 pt-5 md:flex-row lg:px-28 lg:pb-28"
+      >
+        <!-- Left -->
+        <div
+          class="hidden relative container flex-col justify-center items-center lg:flex lg:w-1/2"
+        >
+          <div
+            class="w-full lg:absolute lg:top-24 md:z-30 lg:w-[30rem] lg:h-[42rem]"
+          >
+            <img src="./img/perk.png" alt="perk" class="" />
+          </div>
+
+          <div
+            class="hidden w-[25rem] relative lg:block -translate-x-64 translate-y-1"
+          >
+            <img
+              src="./img/gradient-frame.png"
+              alt="gradient-frame"
+              class="top-0"
+            />
+          </div>
         </div>
 
-        <!-- Question 3 -->
-        <div class="flex flex-col justify-left items-start gap-5 border-t border-b border-white md:flex-row md:py-10">
-            <div class="font-normal text-white text-base pt-6 md:w-1/3">Have a question not answered here?</div>
-            <div class="font-normal text-normalGray text-base pb-6 md:w-2/3">If you have a question that wasn't answered here on this FAQ, feel free to contact me directly and I'll get back to you as soon as possible.</div>
-        </div>
-      </section>
+        <!-- Right -->
+        <div class="lg:w-1/2">
+          <h2 class="font-bold text-white text-2xl pt-8 md:pt-32 md:text-4xl">
+            Straight to the point videos, always
+          </h2>
+          <p class="font-normal text-lighterGray text-xl mt-4 md:mt-6">
+            Chris Courses always delivers content in the most efficient manner
+            possible. All courses are meticulously written, revised, and edited
+            before any production even begins.
+          </p>
 
-      <!-- Footer Section -->
-      <footer id="footer" class="bg-darkGray px-8 py-12">
-        <div class="flex flex-col justify-left items-left border-b border-white md:flex-row">
-            <!-- Logo -->
-            <div class="pb-16 w-32 md:pb-0 md:w-1/3">
-                <img src="./img/logo.svg" alt="logo" class="">
+          <!-- Perk 4 -->
+          <div class="flex items-start justify-start gap-11 pt-11">
+            <div class="bg-iconColor p-3 rounded">
+              <img
+                src="./img/cyclic-arrow.svg"
+                alt="notification-bell"
+                class="w-4 h-4"
+              />
+            </div>
+            <div>
+              <h2 class="text-white font-bold text-lg">Perk #4</h2>
+              <p class="font-normal font-base text-normalGray">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+
+          <!-- Perk 5 -->
+          <div class="flex items-start justify-start gap-11 pt-5">
+            <div class="bg-iconColor p-3 rounded">
+              <img
+                src="./img/notification-bell.svg"
+                alt="notification-bell"
+                class="w-4"
+              />
+            </div>
+            <div>
+              <h2 class="text-white font-bold text-lg">Perk #5</h2>
+              <p class="font-normal font-base text-normalGray">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-center items-center p-6 xl:px-[28rem]">
+        <p class="font-normal text-xl text-lighterGray text-center">
+          “Thank you for making the playlist for these HTML5 Canvas courses. The
+          BEST break down I've seen so far! You explain the reasoning behind the
+          code so clear. Your website is amazing!”
+        </p>
+        <div class="flex justify-center items-center">
+          <div class="pt-3 pr-2">
+            <img
+              src="./img/ceo-apple.png"
+              alt="ceo-apple"
+              class="rounded-full"
+            />
+          </div>
+          <small class="font-normal text-xs text-veryLightGray text-center"
+            >Tom Cook / CEO Apple</small
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="bg-lightGray2 px-4 pb-16">
+      <div class="flex flex-col justify-center items-center">
+        <h2 class="font-bold text-white text-4xl text-center pt-14 md:pt-16">
+          Simple no-tricks pricing
+        </h2>
+        <p
+          class="font-normal text-xl text-ashen text-center pt-4 md:max-w-[32rem]"
+        >
+          If you're not satisfied, contact me within the first 14 days and I'll
+          send you a full refund
+        </p>
+      </div>
+      <div
+        class="flex flex-col justify-center items-center pt-4 md:relative md:-bottom-32 md:flex-row md:mt-4"
+      >
+        <!-- Pricing plan 1 -->
+        <!-- Price -->
+        <div class="flex flex-col justify-center items-center mb-11 md:mb-0">
+          <div class="bg-[#394150] w-full rounded-t-lg py-8">
+            <h2 class="font-bold text-white text-2xl text-center">Yearly</h2>
+            <p class="text-center">
+              <span class="font-normal text-xl text-normalGray single-strike"
+                >$180</span
+              >
+              <span class="font-bold text-[2.6rem] text-white pt-2">$99</span>
+              <span class="font-normal text-xl text-normalGray">/year</span>
+            </p>
+          </div>
+
+          <!-- Features and Button -->
+          <div class="bg-[#1F2937] w-full rounded-b-lg px-8">
+            <div class="flex justify-start items-center pt-4">
+              <div class="pr-5">
+                <img src="./img/checkmark.svg" alt="checkmark" />
+              </div>
+              <p class="font-normal text-base text-white max-w-[17rem]">
+                Unlimited access for your entire lifetime
+              </p>
             </div>
 
-            <!-- Footer Navigations -->
-            <nav class="flex flex-col justify-center items-left gap-14 md:flex-row lg:gap-28 md:w-2/3">
-                <!-- Implement Footer Nav 1 -->
-                <div>
-                    <h3 class="font-bold text-white text-sm uppercase pb-4">Education</h3>
-                    <p class="font-normal text-normalGray text-sm pb-5">Courses</p>
-                    <p class="font-normal text-normalGray text-sm">Blog</p>
-                </div>
+            <div class="flex justify-start items-center pt-4">
+              <img src="./img/checkmark.svg" alt="checkmark" class="pr-5" />
 
-                <!-- Implement Footer Nav 2 -->
-                <div>
-                    <h3 class="font-bold text-white text-sm pb-4">SUPPORT</h3>
-                    <p class="font-normal text-normalGray text-sm pb-5">Forum</p>
-                    <p class="font-normal text-normalGray text-sm">Contact</p>
-                </div>
+              <p class="font-normal text-base text-white max-w-72">
+                All of the benefits that come with the monthly plan
+              </p>
+            </div>
 
-                <!-- Implement Footer Nav 3 -->
-                <div>
-                    <h3 class="font-bold text-white text-sm pb-4 uppercase">Transparency</h3>
-                    <p class="font-normal text-normalGray text-sm">Pricing</p>
-                </div>
+            <div class="flex justify-start items-center pt-4">
+              <div class="pr-5">
+                <img src="./img/checkmark.svg" alt="checkmark" />
+              </div>
+              <p class="font-normal text-base text-white">
+                14 day money back guarantee
+              </p>
+            </div>
 
-                <!-- Implement Footer Nav 4 -->
-                <div class="pb-12">
-                    <h3 class="font-bold text-white text-sm uppercase pb-4">Legal</h3>
-                    <p class="font-normal text-normalGray text-sm pb-5">Privacy</p>
-                    <p class="font-normal text-normalGray text-sm">Terms</p>
-                </div>
-            </nav>
-        </div>    
-        
-        <p class="font-normal text-base text-lighterGray pt-10 md:text-center"><span class="whitespace-nowrap">Providing the lift to launch your</span> <span class="whitespace-nowrap">development career</span></p>
-        <p class="font-normal text-sm text-lighterGray pt-3.5 md:text-center">&copy; <span id="year"></span> Chris Courses. All rights reserved.</p>
-      </footer>
+            <button
+              class="w-full font-normal text-center text-base text-white px-3 py-4 mt-6 mb-5 rounded-lg bg-[#43ACA7]"
+            >
+              Start your subscription
+            </button>
+          </div>
+        </div>
+
+        <!-- Pricing Plan 2 -->
+        <!-- Price -->
+        <div
+          class="w-full flex flex-col justify-center items-center mt-4 mb-11 outline rounded-lg outline-[#49D7D0] relative z-10 md:w-auto md:mt-0"
+        >
+          <div class="py-1 px-3 rounded-full bg-[#43ACA7] translate-y-3">
+            <p class="font-bold text-xs text-[#275E55]">MOST POPULAR</p>
+          </div>
+          <div class="bg-[#394150] w-full rounded-t-lg py-8">
+            <h2 class="font-bold text-white text-2xl text-center">Monthly</h2>
+            <p class="text-center">
+              <span class="font-bold text-[2.6rem] text-white pt-2">$15</span>
+              <span class="font-normal text-xl text-normalGray">/Month</span>
+            </p>
+          </div>
+
+          <!-- Features and Button -->
+          <div
+            class="bg-[#1F2937] w-full rounded-b-lg px-8 flex flex-col justify-center items-start"
+          >
+            <div class="flex justify-center items-center pt-4">
+              <div class="pr-5">
+                <img src="./img/checkmark.svg" alt="checkmark" />
+              </div>
+              <p class="font-normal text-base text-white">
+                Unlock all premium videos
+              </p>
+            </div>
+
+            <div class="flex justify-center items-center pt-4">
+              <div class="pr-5">
+                <img src="./img/checkmark.svg" alt="checkmark" />
+              </div>
+              <p class="font-normal text-base text-white">
+                Download videos and watch offline
+              </p>
+            </div>
+
+            <div class="flex justify-center items-center pt-4">
+              <div class="pr-5">
+                <img src="./img/checkmark.svg" alt="checkmark" />
+              </div>
+              <p class="font-normal text-base text-white">
+                Access premium code snippets
+              </p>
+            </div>
+
+            <div class="flex justify-start items-center pt-4">
+              <div class="pr-5">
+                <img src="./img/checkmark.svg" alt="checkmark" />
+              </div>
+              <p class="font-normal text-base text-white">
+                Access GitHub source code
+              </p>
+            </div>
+
+            <div class="flex justify-center items-center pt-4">
+              <div class="pr-5">
+                <img src="./img/checkmark.svg" alt="checkmark" />
+              </div>
+              <p class="font-normal text-base text-white">
+                14 day money back guarantee
+              </p>
+            </div>
+
+            <button
+              class="w-full font-normal text-center text-base text-white px-3 py-4 mt-6 mb-5 rounded-lg bg-[#43ACA7]"
+            >
+              Start your subscription
+            </button>
+          </div>
+        </div>
+
+        <!-- Pricing Plan 3 -->
+        <!-- Price -->
+        <div class="flex flex-col justify-start items-center mt-4 md:mt-0">
+          <div class="bg-[#394150] w-full rounded-t-lg py-8">
+            <h2 class="font-bold text-white text-2xl text-center">Forever</h2>
+            <p class="text-center">
+              <span class="font-bold text-[2.6rem] text-white pt-2">$349</span>
+              <span class="font-normal text-xl text-normalGray">/year</span>
+            </p>
+          </div>
+
+          <!-- Features and Button -->
+          <div class="bg-[#1F2937] w-full rounded-b-lg px-8">
+            <div class="flex justify-start items-center pt-4">
+              <div class="pr-5">
+                <img src="./img/checkmark.svg" alt="checkmark" />
+              </div>
+              <p class="font-normal text-base text-white max-w-[17rem]">
+                Unlimited access for your entire lifetime
+              </p>
+            </div>
+
+            <div class="flex justify-start items-center pt-4">
+              <img src="./img/checkmark.svg" alt="checkmark" class="pr-5" />
+
+              <p class="font-normal text-base text-white max-w-72">
+                All of the benefits that come with the monthly plan
+              </p>
+            </div>
+
+            <div class="flex justify-start items-center pt-4">
+              <div class="pr-5">
+                <img src="./img/checkmark.svg" alt="checkmark" />
+              </div>
+              <p class="font-normal text-base text-white">
+                14 day money back guarantee
+              </p>
+            </div>
+
+            <button
+              class="w-full font-normal text-center text-base text-white px-3 py-4 mt-6 mb-5 rounded-lg bg-[#43ACA7]"
+            >
+              Start your subscription
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="bg-lightGray3 px-6 pb-24">
+      <h2
+        class="font-bold text-left text-white text-3xl pt-14 pb-8 max-w-80 md:max-w-none"
+      >
+        Frequently asked questions
+      </h2>
+      <hr class="h-0.5" />
+
+      <!-- Question 1 -->
+      <div
+        class="flex flex-col justify-left items-start gap-5 md:flex-row md:py-10"
+      >
+        <div class="font-normal text-white text-base pt-6 md:w-1/3">
+          Are credit card payments secure?
+        </div>
+        <div class="font-normal text-normalGray text-base pb-6 md:w-2/3">
+          Yes! All credit card payments are managed directly through Stripe, an
+          online payment processor considered "the standard" when it comes to
+          accepting online payments. Your credit card never actually touches any
+          part of the chriscourses.com server—it is encrypted and managed
+          directly by Stripe which has strict protocols in place to ensure your
+          card is always secure.
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div
+        class="flex flex-col justify-left items-start gap-5 border-t border-white md:flex-row md:py-10"
+      >
+        <div class="font-normal text-white text-base pt-6 md:w-1/3">
+          Can I cancel at anytime?
+        </div>
+        <div class="font-normal text-normalGray text-base pb-6 md:w-2/3">
+          Yes, for sure. No matter how far you're into your subscription, you
+          can visit your account page and cancel at anytime. Your subscription
+          will stay active 'til the end of your subscription period.
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div
+        class="flex flex-col justify-left items-start gap-5 border-t border-b border-white md:flex-row md:py-10"
+      >
+        <div class="font-normal text-white text-base pt-6 md:w-1/3">
+          Have a question not answered here?
+        </div>
+        <div class="font-normal text-normalGray text-base pb-6 md:w-2/3">
+          If you have a question that wasn't answered here on this FAQ, feel
+          free to contact me directly and I'll get back to you as soon as
+          possible.
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="bg-darkGray px-8 py-12">
+      <div
+        class="flex flex-col justify-left items-left border-b border-white md:flex-row"
+      >
+        <!-- Logo -->
+        <div class="pb-16 w-32 md:pb-0 md:w-1/3">
+          <img src="./img/logo.svg" alt="logo" class="" />
+        </div>
+
+        <!-- Footer Navigations -->
+        <nav
+          class="flex flex-col justify-center items-left gap-14 md:flex-row lg:gap-28 md:w-2/3"
+        >
+          <!-- Implement Footer Nav 1 -->
+          <div>
+            <h3 class="font-bold text-white text-sm uppercase pb-4">
+              Education
+            </h3>
+            <p class="font-normal text-normalGray text-sm pb-5">Courses</p>
+            <p class="font-normal text-normalGray text-sm">Blog</p>
+          </div>
+
+          <!-- Implement Footer Nav 2 -->
+          <div>
+            <h3 class="font-bold text-white text-sm pb-4">SUPPORT</h3>
+            <p class="font-normal text-normalGray text-sm pb-5">Forum</p>
+            <p class="font-normal text-normalGray text-sm">Contact</p>
+          </div>
+
+          <!-- Implement Footer Nav 3 -->
+          <div>
+            <h3 class="font-bold text-white text-sm pb-4 uppercase">
+              Transparency
+            </h3>
+            <p class="font-normal text-normalGray text-sm">Pricing</p>
+          </div>
+
+          <!-- Implement Footer Nav 4 -->
+          <div class="pb-12">
+            <h3 class="font-bold text-white text-sm uppercase pb-4">Legal</h3>
+            <p class="font-normal text-normalGray text-sm pb-5">Privacy</p>
+            <p class="font-normal text-normalGray text-sm">Terms</p>
+          </div>
+        </nav>
+      </div>
+
+      <p class="font-normal text-base text-lighterGray pt-10 md:text-center">
+        <span class="whitespace-nowrap">Providing the lift to launch your</span>
+        <span class="whitespace-nowrap">development career</span>
+      </p>
+      <p class="font-normal text-sm text-lighterGray pt-3.5 md:text-center">
+        &copy; <span id="year"></span> Chris Courses. All rights reserved.
+      </p>
+    </footer>
 
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
