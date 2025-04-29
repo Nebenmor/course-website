@@ -13,7 +13,7 @@ body {
   }
 
 .bgImage {
-    background-image: url('../public/img/hero.png');
+    /* background-image: url('../public/img/hero.png'); */
     background-repeat: no-repeat;
     background-position: top right;
     background-size: cover;
